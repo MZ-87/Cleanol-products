@@ -1,10 +1,11 @@
+// @import 'normalize';
 @import 'reset';
 @import 'global';
 @import 'fonts';
 @import 'vars';
 @import 'mixins';
 
-@import './header';
+@import './blocks/header';
 @import './blocks/banner';
 @import './blocks/about';
 @import './blocks/products';

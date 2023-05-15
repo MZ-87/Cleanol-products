@@ -1,15 +1,14 @@
 .about {
-
-    &__info {
+    &-info {
         background-color: #EFF0F2;
     }
 
-    &__info-text span {
+    &-info-text span {
         font-weight: 600;
         font-size: 18px;
     }
 
-    &__card {
+    &-card {
         justify-content: space-between;
         background-color: white;
         border-radius: 0px 0px 4px 4px;
@@ -84,7 +83,7 @@
         }
     }
 
-    &__info-inner {
+    &-info-inner {
         gap: 75px;
 
         @media (max-width: 1050px) {
@@ -97,7 +96,7 @@
         }
     }
 
-    &__col {
+    &-col {
         gap: 20px;
 
         @media screen and (max-width: 1050px) {
@@ -113,7 +112,7 @@
         }
     }
 
-    &__wrapper {
+    &-wrapper {
         position: relative;
 
         @media (max-width: 990px) {
@@ -164,7 +163,7 @@
         }
     }
 
-    &__background-desc {
+    &__background_desc {
         position: absolute;
         width: 485px;
         height: 112px;
@@ -193,7 +192,6 @@
         }
 
         & p {
-
             @media (max-width: 460px) {
                 line-height: 22px;
             }
@@ -203,20 +201,15 @@
             font-weight: 500;
             font-size: 18px;
         }
-
     }
 
-    &__description {
+    &-description {
         background: rgba(0, 109, 182, 0.08);
         border-radius: 4px;
     }
 
-    &__description-wrapper {
+    &-description-wrapper {
         padding: 145px 45px 80px 45px;
-
-        // @media (max-width: 990px) {
-        //     padding: 70px 0px 70px 45px;
-        // }
 
         @media (max-width: 1360px) {
             padding: 70px 0;
@@ -227,7 +220,7 @@
         }
     }
 
-    &__desc-inner {
+    &-desc-inner {
         gap: 100px;
         justify-content: space-between;
 
@@ -245,7 +238,7 @@
         }
     }
 
-    &__desc-row {
+    &-desc-row {
         gap: 40px;
         width: 560px;
 
@@ -269,7 +262,7 @@
         }
     }
 
-    &__desc-col {
+    &-desc-col {
         gap: 70px;
 
         @media (max-width: 990px) {
@@ -358,7 +351,7 @@
         }
     }
 
-    &__block {
+    &-block {
         padding: 10px 50px 10px 75px;
         height: 70px;
         background-color: white;
@@ -381,18 +374,18 @@
         }
     }
 
-    &__block-inner,
-    &__block-col {
+    &-block-inner,
+    &-block-col {
         gap: 15px;
     }
 
-    &__block-col {
+    &-block-col {
         @media (max-width: 1300px) {
             width: 100%;
         }
     }
 
-    &__block-inner {
+    &-block-inner {
         font-size: 18px;
 
         @media screen and (max-width: 1460px) {
@@ -485,45 +478,47 @@
     font-weight: 500;
 }
 
-.icon__1 {
-    position: relative;
-    gap: 5px;
+.icon {
+    &_1 {
+        position: relative;
+        gap: 5px;
 
-    &::before {
-        position: absolute;
-        content: '';
-        background-image: url(../images/about-icon1.svg);
-        width: 55px;
-        height: 48px;
-        left: 10px;
-        bottom: 13px;
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../images/about-icon1.svg);
+            width: 55px;
+            height: 48px;
+            left: 10px;
+            bottom: 13px;
+        }
     }
-}
 
-.icon__2 {
-    position: relative;
+    &_2 {
+        position: relative;
 
-    &::before {
-        position: absolute;
-        content: '';
-        background-image: url(../images/about-icon2.svg);
-        width: 45px;
-        height: 45px;
-        left: 10px;
-        bottom: 15px;
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../images/about-icon2.svg);
+            width: 45px;
+            height: 45px;
+            left: 10px;
+            bottom: 15px;
+        }
     }
-}
 
-.icon__3 {
-    position: relative;
+    &_3 {
+        position: relative;
 
-    &::before {
-        position: absolute;
-        content: '';
-        background-image: url(../images/about-icon3.svg);
-        width: 36px;
-        height: 45px;
-        left: 10px;
-        bottom: 13px;
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../images/about-icon3.svg);
+            width: 36px;
+            height: 45px;
+            left: 10px;
+            bottom: 13px;
+        }
     }
 }

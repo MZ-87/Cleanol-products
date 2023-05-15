@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "jquery": "^3.6.4",
+    "normalize.css": "^8.0.1",
     "swiper": "^9.0.5"
   }
 }
