@@ -14,10 +14,6 @@ new Swiper('.banner__slider', {
 
 // block products
 
-// if((window.matchMedia('(min-width: 768px)').matches) && (window.matchMedia('(max-width: 1023px)').matches)){
-// 	alert('t');
-// }
-
 const getData = (path, block) => {
     fetch(`../data/${path}.json`)
         .then(response => response.json())
@@ -183,25 +179,3 @@ const smoothScroll = () => {
 }
 
 smoothScroll()
-
-
-// <!-- <div class="products__product-card">
-//     <div class="products__card-img">
-//         <img src="./images/block4_products" alt="">
-//     </div> 
-// <div class="products__card-content">
-//     <h4 class="products__card-title"></h4>
-//     <p class="products__card-info"></p>
-//     <div class="products__ingredients">
-//         <p class="products__card-subtitle">Состав:</p>
-//         <p class="products__card-info"></p>
-//     </div>
-//     <div class="products__size">
-//         <p class="products__card-subtitle">Фасовка:</p>
-//         <div class="products__button-size">1 л</div>
-//         <div class="products__button-size">5 кг</div>
-//         <div class="products__button-size">20 кг</div>
-//         <button class="products__button-buy">Купить</button>
-//     </div>
-// </div>
-// </div> -->
