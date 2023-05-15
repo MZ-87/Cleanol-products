@@ -1,19 +1,4 @@
 "use strict";
-// block banner
-
-new Swiper('.banner__slider', {
-    navigation: {
-        nextEl: '.banner__nav-button_next',
-        prevEl: '.banner__nav-button_prev'
-    },
-    pagination: {
-        el: '.banner__pagination',
-        clickable: true
-    }
-});
-
-// block products
-
 const getData = (path, block) => {
     fetch(`../data/${path}.json`)
         .then(response => response.json())
@@ -69,7 +54,7 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         sizeWrapper.classList.add('products__size');
         sizeTitle.classList.add('products__card-subtitle');
         size1.classList.add('products__size-option');
-        buyButton.classList.add('products__button-buy', 'popup__open');
+        buyButton.classList.add('products__button-buy');
         buyButton.onclick = function () {
             const contact = document.querySelector('#popup')
             contact.classList.toggle("open")
@@ -155,27 +140,9 @@ document.getElementById('shampoo-button-more').addEventListener('click', () => {
     document.getElementById('shampoo-button-more').style.display = 'none';
     getData('shampoo', 'shampoo-collapsible');
 });
+
 document.getElementById('special-button-more').addEventListener('click', () => {
     document.getElementById('special-button-more').style.display = 'none';
     getData('special', 'special-collapsible');
 });
 
-
-const smoothScroll = () => {
-    const links = document.querySelectorAll('.menu-link')
-
-    links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault()
-            const section = document.querySelector(link.getAttribute('href'))
-
-            section.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-                inline: "center",
-            });
-        })
-    })
-}
-
-smoothScroll()
